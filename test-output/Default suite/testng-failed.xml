@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.day8_btvn">
+      <class name="automation.testsuite.day12_btvn">
         <methods>
-          <include name="getLocatorYourProfile"/>
-          <include name="getLocatorTable"/>
-          <include name="getLocatorYourBasicInfo"/>
+          <include name="selectDropList"/>
           <include name="openChrome"/>
         </methods>
-      </class> <!-- automation.testsuite.day8_btvn -->
+      </class> <!-- automation.testsuite.day12_btvn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

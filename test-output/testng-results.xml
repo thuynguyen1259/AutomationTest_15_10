@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T23:13:47 ICT" name="Default suite" finished-at="2023-11-09T23:14:02 ICT" duration-ms="14983">
+  <suite started-at="2023-11-26T09:38:21 ICT" name="Default suite" finished-at="2023-11-26T09:38:40 ICT" duration-ms="19475">
     <groups>
     </groups>
-    <test started-at="2023-11-09T23:13:47 ICT" name="Default test" finished-at="2023-11-09T23:14:02 ICT" duration-ms="14983">
-      <class name="automation.testsuite.day8_btvn">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.day8_btvn@1b11171f]" started-at="2023-11-09T23:13:47 ICT" name="openChrome" finished-at="2023-11-09T23:14:01 ICT" duration-ms="13912" status="PASS">
+    <test started-at="2023-11-26T09:38:21 ICT" name="Default test" finished-at="2023-11-26T09:38:40 ICT" duration-ms="19475">
+      <class name="automation.testsuite.day12_btvn">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.day12_btvn@58d75e99]" started-at="2023-11-26T09:38:21 ICT" name="openChrome" finished-at="2023-11-26T09:38:33 ICT" duration-ms="12262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="getLocatorTable()[pri:3, instance:automation.testsuite.day8_btvn@1b11171f]" started-at="2023-11-09T23:14:01 ICT" name="getLocatorTable" finished-at="2023-11-09T23:14:02 ICT" duration-ms="749" status="PASS">
+        <test-method signature="selectDropList()[pri:0, instance:automation.testsuite.day12_btvn@58d75e99]" started-at="2023-11-26T09:38:33 ICT" name="selectDropList" finished-at="2023-11-26T09:38:40 ICT" duration-ms="7160" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLocatorTable -->
-        <test-method is-config="true" signature="closeChromeBrower()[pri:0, instance:automation.testsuite.day8_btvn@1b11171f]" started-at="2023-11-09T23:14:02 ICT" name="closeChromeBrower" finished-at="2023-11-09T23:14:02 ICT" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeChromeBrower -->
-      </class> <!-- automation.testsuite.day8_btvn -->
+        </test-method> <!-- selectDropList -->
+      </class> <!-- automation.testsuite.day12_btvn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
