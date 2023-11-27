@@ -20,4 +20,11 @@ public class CommonBase {
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		return driver;
 	}
+	public void closeDriver()
+	{
+		if(driver!=null)
+		{
+			driver.close();
+		}
+	}
 }
