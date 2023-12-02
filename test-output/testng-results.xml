@@ -1,57 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-27T22:11:25 ICT" name="Default suite" finished-at="2023-11-27T22:14:00 ICT" duration-ms="154349">
+  <suite started-at="2023-12-02T22:58:06 ICT" name="Default suite" finished-at="2023-12-02T23:00:11 ICT" duration-ms="124973">
     <groups>
     </groups>
-    <test started-at="2023-11-27T22:11:25 ICT" name="Default test" finished-at="2023-11-27T22:14:00 ICT" duration-ms="154349">
-      <class name="automation.testsuite.LoginTest_btvnd13">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:11:25 ICT" name="openChrome" finished-at="2023-11-27T22:11:51 ICT" duration-ms="25747" status="PASS">
+    <test started-at="2023-12-02T22:58:06 ICT" name="Default test" finished-at="2023-12-02T23:00:11 ICT" duration-ms="124973">
+      <class name="automation.testsuite.LoginTest_Fact_btvnd14">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:58:06 ICT" name="openChrome" finished-at="2023-12-02T22:58:29 ICT" duration-ms="22916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="LoginSuccessFully()[pri:1, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:11:51 ICT" name="LoginSuccessFully" finished-at="2023-11-27T22:12:06 ICT" duration-ms="14492" status="PASS">
+        <test-method signature="Register_SuccessFully()[pri:1, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:58:29 ICT" name="Register_SuccessFully" finished-at="2023-12-02T22:58:47 ICT" duration-ms="17826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSuccessFully -->
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:12:06 ICT" name="openChrome" finished-at="2023-11-27T22:12:21 ICT" duration-ms="15245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="LoginFail_IncorrectEmail()[pri:2, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:12:21 ICT" name="LoginFail_IncorrectEmail" finished-at="2023-11-27T22:12:29 ICT" duration-ms="7953" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail_IncorrectEmail -->
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:12:29 ICT" name="openChrome" finished-at="2023-11-27T22:12:44 ICT" duration-ms="15120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="LoginFail_IncorrectPass()[pri:3, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:12:44 ICT" name="LoginFail_IncorrectPass" finished-at="2023-11-27T22:12:52 ICT" duration-ms="8453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail_IncorrectPass -->
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:12:52 ICT" name="openChrome" finished-at="2023-11-27T22:13:14 ICT" duration-ms="21421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="LoginFail_IncorrectEmailPass()[pri:4, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:13:14 ICT" name="LoginFail_IncorrectEmailPass" finished-at="2023-11-27T22:13:23 ICT" duration-ms="9014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail_IncorrectEmailPass -->
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:13:23 ICT" name="openChrome" finished-at="2023-11-27T22:13:39 ICT" duration-ms="16651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="LogOutSuccessfully()[pri:5, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:13:39 ICT" name="LogOutSuccessfully" finished-at="2023-11-27T22:13:59 ICT" duration-ms="19952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogOutSuccessfully -->
-        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest_btvnd13@61001b64]" started-at="2023-11-27T22:13:59 ICT" name="closeChrome" finished-at="2023-11-27T22:14:00 ICT" duration-ms="181" status="PASS">
+        </test-method> <!-- Register_SuccessFully -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:58:47 ICT" name="closeChrome" finished-at="2023-12-02T22:58:47 ICT" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChrome -->
-      </class> <!-- automation.testsuite.LoginTest_btvnd13 -->
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:58:47 ICT" name="openChrome" finished-at="2023-12-02T22:59:06 ICT" duration-ms="18764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="Login_Successfully()[pri:2, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:59:06 ICT" name="Login_Successfully" finished-at="2023-12-02T22:59:32 ICT" duration-ms="26173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Successfully -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:59:32 ICT" name="closeChrome" finished-at="2023-12-02T22:59:32 ICT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:59:32 ICT" name="openChrome" finished-at="2023-12-02T22:59:52 ICT" duration-ms="19811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="Login_Successfully_NewPass()[pri:3, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T22:59:52 ICT" name="Login_Successfully_NewPass" finished-at="2023-12-02T23:00:11 ICT" duration-ms="18805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Successfully_NewPass -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest_Fact_btvnd14@1b2abca6]" started-at="2023-12-02T23:00:11 ICT" name="closeChrome" finished-at="2023-12-02T23:00:11 ICT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- automation.testsuite.LoginTest_Fact_btvnd14 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

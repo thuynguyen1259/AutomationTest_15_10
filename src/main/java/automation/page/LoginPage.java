@@ -25,13 +25,13 @@ private WebDriver driver;
 			email.sendKeys(emailValue);
 		}
 		WebElement pass =driver.findElement(CT_Account.TEXT_PASSWORD);
-		if(email.isEnabled())
+		if(pass.isEnabled())
 		{
 			pass.clear();
 			pass.sendKeys(passValue);
 		}
 		WebElement login  =driver.findElement(CT_Account.BUTTON_SIGNIN);
-		if(email.isEnabled())
+		if(login.isEnabled())
 		{
 			login.click();
 		}
@@ -39,8 +39,14 @@ private WebDriver driver;
 	public void LogoutFuntion()
 	{
 		WebElement userdropdown =driver.findElement(CT_Account.USER_DROPDOWN);
+		if(userdropdown.isEnabled())
+		{
 		userdropdown.click();
+		}
 		WebElement logout=driver.findElement(CT_Account.BUTTON_LOGOUT);
+		if(logout.isEnabled())
+		{
 		logout.click();
+		}
 	}
 }
