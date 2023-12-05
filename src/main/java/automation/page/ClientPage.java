@@ -58,6 +58,9 @@ public class ClientPage {
     @FindBy(id = "s2id_group_ids")
     WebElement dropGroup;
     
+    @FindBy(xpath="//ul[@class='select2-results']//div[text()='Gold']")
+    WebElement groupItem;
+    
     @FindBy(id = "s2id_currency")
     WebElement dropCurrency;
     
@@ -69,6 +72,9 @@ public class ClientPage {
     
     @FindBy(id = "s2id_client_labels")
     WebElement dropClientLabels;
+    
+    @FindBy(xpath="//ul[@class='select2-results']//div[text()='Unsatisfied']")
+    WebElement labelItem;
     
     @FindBy(id="disable_online_payment")
     WebElement checkboxDisableOnlinePayment;
@@ -109,14 +115,15 @@ public class ClientPage {
         textVATNumber.sendKeys(VAT_Number);
         textGSTNumber.sendKeys(GST_Number);
         Thread.sleep(5000);
-       //dropGroup.sendKeys(Client_groups);
-       
-       // Thread.sleep(5000);
+        dropGroup.click();
+        groupItem.click();
+        Thread.sleep(5000);
         dropCurrency.click();
         currencyItem.click();
         textCurrencySymbol.sendKeys(Currency_Symbol);
 		Thread.sleep(5000);
-		//dropClientLabels.sendKeys(Label);
+		dropClientLabels.click();
+		labelItem.click();
 		buttonSave.click();
 		Thread.sleep(5000);
 		//assert add client successful

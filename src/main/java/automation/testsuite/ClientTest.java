@@ -33,9 +33,9 @@ public class ClientTest extends CommonBase {
 		isElementPresent(By.xpath("//a[text()='Thuy99 Company']"));
 		
 	}
-//	@AfterMethod
-//	public void closeChrome() {
-//		closeDriver(); //đóng driver
-//	}
+	@AfterMethod
+	public void closeChrome() {
+		closeDriver(); //đóng driver
+	}
 	
 }
