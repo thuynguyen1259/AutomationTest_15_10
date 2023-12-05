@@ -5,7 +5,6 @@
     <classes>
       <class name="automation.testsuite.ClientTest">
         <methods>
-          <include name="closeChrome"/>
           <include name="openChrome"/>
           <include name="AddClientSuccessfully"/>
         </methods>

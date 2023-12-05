@@ -1,6 +1,7 @@
 package automation.page;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,6 +61,9 @@ public class ClientPage {
     @FindBy(id = "s2id_currency")
     WebElement dropCurrency;
     
+    @FindBy(xpath="//ul[@id='select2-results-1']//div[text()='AUD']")
+    WebElement currencyItem;
+    
     @FindBy(id = "currency_symbol")
     WebElement textCurrencySymbol;
     
@@ -105,9 +109,11 @@ public class ClientPage {
         textVATNumber.sendKeys(VAT_Number);
         textGSTNumber.sendKeys(GST_Number);
         Thread.sleep(5000);
-       // dropGroup.sendKeys(Client_groups);
-        Thread.sleep(5000);
-        //dropCurrency.sendKeys(Currency);
+       //dropGroup.sendKeys(Client_groups);
+       
+       // Thread.sleep(5000);
+        dropCurrency.click();
+        currencyItem.click();
         textCurrencySymbol.sendKeys(Currency_Symbol);
 		Thread.sleep(5000);
 		//dropClientLabels.sendKeys(Label);

@@ -25,17 +25,17 @@ public class ClientTest extends CommonBase {
 		login.LoginFunction("admin@demo.com", "riseDemo");
 		Thread.sleep(5000);
 		ClientPage client = new ClientPage (driver);
-		client.AddClientFunction("Thuy99 Company", "Sara Ann","Hadong","Ha Noi","State1","10000","VietNam","0967764634","website1","123","456","VIP",
-				"AFN","$","Unsatisfied");
+		client.AddClientFunction("Thuy99 Company", "Sara Ann","Hadong","Ha Noi","State1","10000","VietNam","0967764634","website1","123","456","Gold",
+				"AUD","$","Unsatisfied");
 		//check add thành công 
 		//assertTrue(driver.findElement(By.xpath("//a[text()='Thuy Company']")).isDisplayed());
 		Thread.sleep(5000);
 		isElementPresent(By.xpath("//a[text()='Thuy99 Company']"));
 		
 	}
-	@AfterMethod
-	public void closeChrome() {
-		closeDriver(); //đóng driver
-	}
+//	@AfterMethod
+//	public void closeChrome() {
+//		closeDriver(); //đóng driver
+//	}
 	
 }
