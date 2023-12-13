@@ -25,7 +25,8 @@ public static By INFOMATION =By.xpath("//a[text()='Thông tin chung']");
 //BTVN day 15
 public static By SEARCH_RESULT =By.xpath("//h2[text()='Flight Search Result']");
 
-
+//BTVN day 16
+public static String BLOGSPOT_URL = "https://seleniumpractise.blogspot.com/2019/01/alert-demo.html";
 }
 
 
