@@ -2,16 +2,20 @@ package automation.testsuite;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
 
 public class day17_handleIframe extends CommonBase {
 	
+	@Parameters("browser")
 	@BeforeMethod
-	public void openChrome() {
-		driver=initChromeDriver("https://codestar.vn/");
+	public void openChrome1(String browser) {
+		setupDriver(browser);
+		driver.get("https://codestar.vn/");
 	}
 	@Test
 	public void testGuiNgay_iFrame() 
@@ -63,6 +67,10 @@ public class day17_handleIframe extends CommonBase {
 			// đóng iframe trước khi chuyển sang iframe tiếp theo
 			driver.switchTo().defaultContent();
 		}
+	}
+	@AfterMethod
+	public void closeChrome() {
+		closeDriver(); //đóng driver
 	}
 	
 }

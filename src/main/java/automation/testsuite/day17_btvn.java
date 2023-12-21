@@ -1,17 +1,20 @@
 package automation.testsuite;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
 
 public class day17_btvn extends CommonBase {
 	
+	@Parameters("browser")
 	@BeforeMethod
-	public void openChrome() {
-		driver=initChromeDriver("https://mediamart.vn/");
+	public void openChrome(String browser) {
+		setupDriver(browser);
+		driver.get("https://mediamart.vn/");
 	}
 	@Test
 	public void testZalo_iFrame() 
@@ -19,9 +22,10 @@ public class day17_btvn extends CommonBase {
 		pause(5000);
 		//tìm số lượng iframe
 		int totaliframe=driver.findElements(By.tagName("iframe")).size();
-		//for(int i=0;i<totaliframe;i++) {
+		for(int i=0;i<totaliframe;i++) {
+			try {	
 			// tìm index của iframe
-			driver.switchTo().frame(0);
+			driver.switchTo().frame(i);
 			//tìm số lượng có zalo
 			int totalZalo =driver.findElements(By.xpath("//div[@class='za-chat__head-box']")).size();
 			System.out.println(" button gửi ngay: "+totalZalo);
@@ -36,9 +40,16 @@ public class day17_btvn extends CommonBase {
 			// đóng iframe trước khi chuyển sang iframe tiếp theo
 			driver.switchTo().defaultContent();
 		}
+		//bắt exception
+			catch(Exception e) {
+				return;
+			}
+		}
+	}
 	@AfterMethod
 	public void closeChrome() {
 		closeDriver(); //đóng driver
 	}
 
 }
+

@@ -1,25 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T22:21:40 ICT" name="Default suite" finished-at="2023-12-16T22:22:37 ICT" duration-ms="56299">
+  <suite started-at="2023-12-18T20:19:12 ICT" name="TestSuite" finished-at="2023-12-18T20:22:03 ICT" duration-ms="171094">
     <groups>
     </groups>
-    <test started-at="2023-12-16T22:21:40 ICT" name="Default test" finished-at="2023-12-16T22:22:37 ICT" duration-ms="56299">
-      <class name="automation.testsuite.day17_btvn">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.day17_btvn@5a56cdac]" started-at="2023-12-16T22:21:40 ICT" name="openChrome" finished-at="2023-12-16T22:22:16 ICT" duration-ms="35924" status="PASS">
+    <test started-at="2023-12-18T20:19:12 ICT" name="AutomationTestProject run on chrome" finished-at="2023-12-18T20:20:57 ICT" duration-ms="104650">
+      <class name="automation.testsuite.day18_btvn1">
+        <test-method is-config="true" signature="openChrome1(java.lang.String)[pri:0, instance:automation.testsuite.day18_btvn1@3c7f66c4]" started-at="2023-12-18T20:19:12 ICT" name="openChrome1" finished-at="2023-12-18T20:19:53 ICT" duration-ms="41288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="testZalo_iFrame()[pri:0, instance:automation.testsuite.day17_btvn@5a56cdac]" started-at="2023-12-16T22:22:16 ICT" name="testZalo_iFrame" finished-at="2023-12-16T22:22:35 ICT" duration-ms="18822" status="PASS">
+        </test-method> <!-- openChrome1 -->
+        <test-method signature="testZalo()[pri:0, instance:automation.testsuite.day18_btvn1@3c7f66c4]" started-at="2023-12-18T20:19:53 ICT" name="testZalo" finished-at="2023-12-18T20:20:00 ICT" duration-ms="6462" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testZalo_iFrame -->
-        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.day17_btvn@5a56cdac]" started-at="2023-12-16T22:22:35 ICT" name="closeChrome" finished-at="2023-12-16T22:22:37 ICT" duration-ms="1328" status="PASS">
+        </test-method> <!-- testZalo -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.day18_btvn1@3c7f66c4]" started-at="2023-12-18T20:20:00 ICT" name="closeChrome" finished-at="2023-12-18T20:20:00 ICT" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChrome -->
-      </class> <!-- automation.testsuite.day17_btvn -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- automation.testsuite.day18_btvn1 -->
+      <class name="automation.testsuite.day18_btvn2">
+        <test-method is-config="true" signature="openChrome1(java.lang.String)[pri:0, instance:automation.testsuite.day18_btvn2@534a5a98]" started-at="2023-12-18T20:20:00 ICT" name="openChrome1" finished-at="2023-12-18T20:20:57 ICT" duration-ms="56538" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 48.012
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76778d1f5a929ebfa5dabed0057b2896, get {url=https://bepantoan.vn/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/qy/s33jq4td7fb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76778d1f5a929ebfa5dabed0057b2896]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 48.012
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76778d1f5a929ebfa5dabed0057b2896, get {url=https://bepantoan.vn/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/qy/s33jq4td7fb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76778d1f5a929ebfa5dabed0057b2896
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+at automation.testsuite.day18_btvn2.openChrome1(day18_btvn2.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome1 -->
+        <test-method signature="testChat()[pri:0, instance:automation.testsuite.day18_btvn2@534a5a98]" started-at="2023-12-18T20:20:57 ICT" name="testChat" finished-at="2023-12-18T20:20:57 ICT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 48.012
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76778d1f5a929ebfa5dabed0057b2896, get {url=https://bepantoan.vn/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/qy/s33jq4td7fb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76778d1f5a929ebfa5dabed0057b2896]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 48.012
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76778d1f5a929ebfa5dabed0057b2896, get {url=https://bepantoan.vn/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/qy/s33jq4td7fb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76778d1f5a929ebfa5dabed0057b2896
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+at automation.testsuite.day18_btvn2.openChrome1(day18_btvn2.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChat -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.day18_btvn2@534a5a98]" started-at="2023-12-18T20:20:57 ICT" name="closeChrome" finished-at="1970-01-01T08:00:00 ICT" duration-ms="-1702905657277" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- automation.testsuite.day18_btvn2 -->
+    </test> <!-- AutomationTestProject run on chrome -->
+    <test started-at="2023-12-18T20:20:57 ICT" name="AutomationTestProject run on firefox" finished-at="2023-12-18T20:22:03 ICT" duration-ms="65827">
+      <class name="automation.testsuite.day18_btvn1">
+        <test-method is-config="true" signature="openChrome1(java.lang.String)[pri:0, instance:automation.testsuite.day18_btvn1@26d9b808]" started-at="2023-12-18T20:20:57 ICT" name="openChrome1" finished-at="2023-12-18T20:21:17 ICT" duration-ms="19548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome1 -->
+        <test-method signature="testZalo()[pri:0, instance:automation.testsuite.day18_btvn1@26d9b808]" started-at="2023-12-18T20:21:17 ICT" name="testZalo" finished-at="2023-12-18T20:21:18 ICT" duration-ms="1476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZalo -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.day18_btvn1@26d9b808]" started-at="2023-12-18T20:21:18 ICT" name="closeChrome" finished-at="2023-12-18T20:21:19 ICT" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- automation.testsuite.day18_btvn1 -->
+      <class name="automation.testsuite.day18_btvn2">
+        <test-method is-config="true" signature="openChrome1(java.lang.String)[pri:0, instance:automation.testsuite.day18_btvn2@f78a47e]" started-at="2023-12-18T20:21:19 ICT" name="openChrome1" finished-at="2023-12-18T20:21:42 ICT" duration-ms="22807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome1 -->
+        <test-method signature="testChat()[pri:0, instance:automation.testsuite.day18_btvn2@f78a47e]" started-at="2023-12-18T20:21:42 ICT" name="testChat" finished-at="2023-12-18T20:22:00 ICT" duration-ms="18568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChat -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.day18_btvn2@f78a47e]" started-at="2023-12-18T20:22:00 ICT" name="closeChrome" finished-at="2023-12-18T20:22:03 ICT" duration-ms="2775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- automation.testsuite.day18_btvn2 -->
+    </test> <!-- AutomationTestProject run on firefox -->
+  </suite> <!-- TestSuite -->
 </testng-results>

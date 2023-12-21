@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+	<test name="AutomationTestProject run on chrome">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="automation.testsuite.day18_btvn1" /> 
+			<class name="automation.testsuite.day18_btvn2" /> 
+
+		</classes>	
+	</test> 
+	
+		<test name="AutomationTestProject run on firefox">
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="automation.testsuite.day18_btvn1" /> 
+			<class name="automation.testsuite.day18_btvn2" /> 
+
+		</classes>	
+	</test> 
+	
+</suite> <!-- Suite -->

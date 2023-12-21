@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.day17_btvn">
+      <class name="automation.testsuite.day18_btvn2">
         <methods>
-          <include name="testZalo_iFrame"/>
-          <include name="openChrome"/>
+          <include name="openChrome1"/>
+          <include name="testChat"/>
         </methods>
-      </class> <!-- automation.testsuite.day17_btvn -->
+      </class> <!-- automation.testsuite.day18_btvn2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
